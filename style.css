@@ -1,0 +1,104 @@
+header img {
+    width: 200px;
+    height: 100px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.container1 p, h2 {
+    text-align: center;
+    margin: 5px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.information-table {
+    margin-top: 50px;
+    background-color: rgb(233, 226, 226);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, textarea {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+textarea{
+    resize: none;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos {
+    display: grid;
+    grid-gap: 15px;
+}  
+
+.photos > div > div:hover {
+    background-color: transparent !important;
+    backdrop-filter: none;
+}
+
+.photos > div > div {
+    transition: background-color 2s, backdrop-filter 2s;
+}
+
+.photos > div {
+    height: 300px;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }
+    .photos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .information-table {
+        width: 900px;
+    }
+    .information-table {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .follow {
+        flex: 1;
+    }
+    
+    .get-in-touch {
+        flex: 2;
+    }
+
+    .button
+    {
+        border-radius: 5px;
+    }
+}
